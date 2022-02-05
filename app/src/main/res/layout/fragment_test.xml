@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testFragment">
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/question_mark"
+        android:id="@+id/button1"
+        />
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp">
+
+            <GridView
+                android:id="@+id/gv"
+                android:layout_marginTop="60dp"
+                android:layout_width="280dp"
+                android:layout_height="275dp"
+                android:columnWidth="45dp"
+                android:gravity="center"
+                android:numColumns="5"
+                android:stretchMode="columnWidth"/>
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:textStyle="bold"
+                android:textColor="#EC7063"
+                android:layout_marginLeft="5dp"
+                android:textSize="23dp"/>
+
+            <Button
+                android:id="@+id/pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="470dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:text="UVA pdf"/>
+
+            <Button
+                android:id="@+id/finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="470dp"
+                android:layout_marginLeft="160dp"
+                android:textColor="@color/white"
+                android:text="未完成"/>
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
